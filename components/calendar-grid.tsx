@@ -28,12 +28,12 @@ const mockSchedule: Record<string, Record<string, "booked" | "unavailable" | "op
 export default function WeeklyCalendarGrid() {
   return (
     <div className="overflow-x-auto">
-      <table className="min-w-full border-collapse">
+      <table className="min-w-full border-collapse text-xs sm:text-sm">
         <thead>
           <tr>
-            <th className="w-20 bg-slate-100 border border-slate-200"></th>
+            <th className="w-16 sm:w-20 bg-slate-100 border border-slate-200"></th>
             {days.map((day) => (
-              <th key={day} className="text-xs font-semibold bg-slate-100 border border-slate-200 px-2 py-1 text-center">
+              <th key={day} className="font-semibold bg-slate-100 border border-slate-200 px-1 sm:px-2 py-1 text-center whitespace-nowrap">
                 {day}
               </th>
             ))}
@@ -42,7 +42,7 @@ export default function WeeklyCalendarGrid() {
         <tbody>
           {times.map((time) => (
             <tr key={time}>
-              <td className="text-xs text-slate-500 bg-slate-50 border border-slate-200 px-2 py-1 text-right w-20">
+              <td className="text-slate-500 bg-slate-50 border border-slate-200 px-1 sm:px-2 py-1 text-right w-16 sm:w-20 whitespace-nowrap">
                 {time}
               </td>
               {days.map((day) => {
@@ -54,9 +54,9 @@ export default function WeeklyCalendarGrid() {
                 return (
                   <td
                     key={day + time}
-                    className={`border border-slate-200 h-6 ${cellClass}`}
+                    className={`border border-slate-200 h-6 sm:h-8 ${cellClass} cursor-pointer transition-colors`}
                   >
-                    {status === "booked" ? <span className="block w-full h-full text-xs text-green-900 text-center">Booked</span> : null}
+                    {status === "booked" ? <span className="block w-full h-full text-[10px] sm:text-xs text-green-900 text-center">Booked</span> : null}
                   </td>
                 )
               })}

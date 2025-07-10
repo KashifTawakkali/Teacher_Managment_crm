@@ -2,7 +2,7 @@ import React from "react"
 
 function DetailsCard() {
   return (
-    <div className="bg-white rounded shadow p-4 mb-4 border">
+    <div className="bg-white rounded shadow p-4 mb-4 border w-full">
       <div className="font-semibold mb-2">Details</div>
       <div className="text-sm">
         <div><span className="font-medium">Name:</span> Alynia Allan</div>
@@ -15,7 +15,7 @@ function DetailsCard() {
 
 function QualificationsTable({ title, data }: { title: string; data: { name: string; rate: string }[] }) {
   return (
-    <div className="bg-white rounded shadow p-4 mb-4 border">
+    <div className="bg-white rounded shadow p-4 mb-4 border w-full">
       <div className="font-semibold mb-2">{title}</div>
       <table className="w-full text-sm">
         <thead>
@@ -43,7 +43,7 @@ function QualificationsTable({ title, data }: { title: string; data: { name: str
 
 function EmailCard() {
   return (
-    <div className="bg-white rounded shadow p-4 mb-4 border">
+    <div className="bg-white rounded shadow p-4 mb-4 border w-full">
       <div className="font-semibold mb-2">Email</div>
       <div className="text-sm">alyniaallan@example.com</div>
     </div>
@@ -52,7 +52,7 @@ function EmailCard() {
 
 function PhoneCard() {
   return (
-    <div className="bg-white rounded shadow p-4 mb-4 border">
+    <div className="bg-white rounded shadow p-4 mb-4 border w-full">
       <div className="font-semibold mb-2">Phone</div>
       <div className="text-sm">(416) 848-9057</div>
     </div>
@@ -61,7 +61,7 @@ function PhoneCard() {
 
 function AddressCard() {
   return (
-    <div className="bg-white rounded shadow p-4 mb-4 border">
+    <div className="bg-white rounded shadow p-4 mb-4 border w-full">
       <div className="font-semibold mb-2">Addresses</div>
       <div className="text-sm">56 Oswaldio Da Santos Cir<br/>North York, Ontario<br/>Canada</div>
     </div>
@@ -78,15 +78,15 @@ export default function TeacherDetailsSection() {
   const groupQualifications: { name: string; rate: string }[] = []
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 w-full">
       {/* Left column */}
-      <div>
+      <div className="flex flex-col w-full">
         <DetailsCard />
         <QualificationsTable title="Private Qualifications" data={privateQualifications} />
         <QualificationsTable title="Group Qualifications" data={groupQualifications} />
       </div>
       {/* Right column */}
-      <div>
+      <div className="flex flex-col w-full">
         <EmailCard />
         <PhoneCard />
         <AddressCard />
