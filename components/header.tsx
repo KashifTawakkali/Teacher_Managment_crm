@@ -15,7 +15,7 @@ export function Header({ onMenuClick }: { onMenuClick?: () => void }) {
         <nav className="flex items-center space-x-2 text-sm">
           <span className="opacity-80">Teachers</span>
           <span className="mx-1">/</span>
-          <span className="font-semibold">Alynia Allan</span>
+          <span className="font-semibold">Mohammadkashif Patel</span>
         </nav>
       </div>
       {/* Right: Profile/Settings */}

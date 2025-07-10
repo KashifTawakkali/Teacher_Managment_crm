@@ -5,7 +5,7 @@ function DetailsCard() {
     <div className="bg-white rounded shadow p-4 mb-4 border w-full">
       <div className="font-semibold mb-2">Details</div>
       <div className="text-sm">
-        <div><span className="font-medium">Name:</span> Alynia Allan</div>
+        <div><span className="font-medium">Name:</span> Mohammadkashif Patel</div>
         <div><span className="font-medium">Role:</span> Teacher</div>
         <div><span className="font-medium">Birth Date:</span> 1990-01-01</div>
       </div>
@@ -45,7 +45,7 @@ function EmailCard() {
   return (
     <div className="bg-white rounded shadow p-4 mb-4 border w-full">
       <div className="font-semibold mb-2">Email</div>
-      <div className="text-sm">alyniaallan@example.com</div>
+      <div className="text-sm">patelkashif08@gmail.com</div>
     </div>
   )
 }
@@ -54,7 +54,7 @@ function PhoneCard() {
   return (
     <div className="bg-white rounded shadow p-4 mb-4 border w-full">
       <div className="font-semibold mb-2">Phone</div>
-      <div className="text-sm">(416) 848-9057</div>
+      <div className="text-sm">8668234170</div>
     </div>
   )
 }
@@ -63,7 +63,7 @@ function AddressCard() {
   return (
     <div className="bg-white rounded shadow p-4 mb-4 border w-full">
       <div className="font-semibold mb-2">Addresses</div>
-      <div className="text-sm">56 Oswaldio Da Santos Cir<br/>North York, Ontario<br/>Canada</div>
+      <div className="text-sm">R Ephuria B-12 Kondhwa Pune -411048</div>
     </div>
   )
 }
